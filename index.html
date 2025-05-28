@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        อันนี้ทำเองลองไปประมวลผลก่อนถ้าเกิดไม่เป็นไปตามอย่างที่คิดให้ลองเปลี่ยนดูโปรดลบข้อความสีเขียวด้วย
+
+        <---------------------------------------------------------------------------------------->
+
+        สไตล์ CSS สำหรับส่วนหัวของเว็บไซต์ 
+        */
+        header {
+            background-color: #666; /* สีพื้นหลังเป็นสีเทาเข้ม */
+            padding: 30px; /* ระยะห่างภายใน 30px รอบด้าน */
+            text-align: center; /* จัดตำแหน่งข้อความให้อยู่ตรงกลาง */
+            font-size: 35px; /* ขนาดตัวอักษร 35px */
+            color: white; /* สีตัวอักษรเป็นสีขาว */
+        }
+
+        /* สไตล์ CSS สำหรับแถบนำทาง */
+        nav {
+            float: left; /* ลอยองค์ประกอบไปทางซ้าย */
+            width: 30%; /* กำหนดความกว้าง 30% ของพื้นที่แม่ */
+            height: 300px; /* กำหนดความสูง 300px */
+            background: #ccc; /* สีพื้นหลังเป็นสีเทาอ่อน */
+            padding: 20px; /* ระยะห่างภายใน 20px รอบด้าน */
+        }
+
+        /* สไตล์ CSS สำหรับรายการในแถบนำทาง */
+        nav ul {
+            list-style-type: none; /* ลบสัญลักษณ์นำหน้าของรายการ (bullet points) */
+            padding: 0; /* ลบระยะห่างภายในของรายการ */
+        }
+
+        /* สไตล์ CSS สำหรับส่วนเนื้อหาบทความ */
+        article {
+            float: left; /* ลอยองค์ประกอบไปทางซ้าย */
+            padding: 20px; /* ระยะห่างภายใน 20px รอบด้าน */
+            width: 65%; /* กำหนดความกว้าง 65% ของพื้นที่แม่ */
+            background-color: #f1f1f1; /* สีพื้นหลังเป็นสีเทาอ่อนมาก */
+            height: 300px; /* กำหนดความสูง 300px */
+        }
+
+        /* สไตล์ CSS สำหรับการเคลียร์ float หลังจากส่วน section */
+        section::after {
+            content: ""; /* สร้างเนื้อหาว่างเปล่า */
+            display: table; /* แสดงผลเป็นตาราง */
+            clear: both; /* เคลียร์ float ทั้งสองด้านเพื่อให้ส่วนถัดไปไม่ได้รับผลกระทบจาก float */
+        }
+
+        /* สไตล์ CSS สำหรับส่วนท้ายของเว็บไซต์ */
+        footer {
+            background-color: #777; /* สีพื้นหลังเป็นสีเทา */
+            padding: 10px; /* ระยะห่างภายใน 10px รอบด้าน */
+            text-align: center; /* จัดตำแหน่งข้อความให้อยู่ตรงกลาง */
+            color: white; /* สีตัวอักษรเป็นสีขาว */
+            height: 50px; /* กำหนดความสูง 50px */
+            font-size: 30px; /* ขนาดตัวอักษร 30px */
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <h2>Makkhawan</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">ประวัติส่วนตัว</a></li> <li><a href="#">ประวัติการทำงาน</a></li> <li><a href="#">ผลงาน</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>London</h1>
+            <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a
+            metropolitan area of over 13 million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going
+            back to its founding by the Romans, who named it Londinium.</p>
+        </article>
+    </section>
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+
+</html>
